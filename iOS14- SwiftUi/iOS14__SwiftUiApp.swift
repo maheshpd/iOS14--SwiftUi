@@ -11,7 +11,7 @@ import SwiftUI
 struct iOS14__SwiftUiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MapView()
         }
     }
 }

@@ -4,12 +4,16 @@
 //
 //  Created by Mahesh Prasad on 08/06/21.
 //
-
+import MapKit
 import SwiftUI
 
+
 struct MapView: View {
+    
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Map(coordinateRegion: $region)
     }
 }
 
